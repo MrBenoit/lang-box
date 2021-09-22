@@ -44,7 +44,7 @@ export const createContent = (languages) => {
       [
         trimRightStr(name, 10).padEnd(10),
         ("+" + formatNum(additions)).padStart(7) +
-          "/" +
+          " " +
           ("-" + formatNum(deletions)).padStart(7),
         generateBarChart(percent, 21),
       ].join(" ") +
